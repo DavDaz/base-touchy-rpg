@@ -10180,12 +10180,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1528627318320834948, guid: 5b12b1534f340aa45af5fc5e403adc05, type: 3}
       propertyPath: sceneDependencies.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1528627318320834948, guid: 5b12b1534f340aa45af5fc5e403adc05, type: 3}
       propertyPath: sceneDependencies.Array.data[0]
       value: 
       objectReference: {fileID: 11400000, guid: f88beb2ff950e1a4f920a3914d07ad1b, type: 2}
+    - target: {fileID: 1528627318320834948, guid: 5b12b1534f340aa45af5fc5e403adc05, type: 3}
+      propertyPath: sceneDependencies.Array.data[1]
+      value: 
+      objectReference: {fileID: 11400000, guid: e5014ca049afd6644a673d0bcc48abc7, type: 2}
     - target: {fileID: 2087519228236606903, guid: 5b12b1534f340aa45af5fc5e403adc05, type: 3}
       propertyPath: m_LocalPosition.x
       value: -0.08

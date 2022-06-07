@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6021096157622240081}
   - component: {fileID: 1528627318320834948}
   - component: {fileID: 4901499785765040719}
+  - component: {fileID: 1157447716350740678}
   m_Layer: 0
   m_Name: LevelInitializer
   m_TagString: Untagged
@@ -46,7 +47,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af304c64c661cae47a7f97e84ae212e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneDependencies: []
+  sceneDependencies:
+  - {fileID: 11400000, guid: f88beb2ff950e1a4f920a3914d07ad1b, type: 2}
+  - {fileID: 11400000, guid: e5014ca049afd6644a673d0bcc48abc7, type: 2}
   onDependenciesLoaded:
     m_PersistentCalls:
       m_Calls:
@@ -57,6 +60,18 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1157447716350740678}
+        m_TargetAssemblyTypeName: GameStateChanger, Assembly-CSharp
+        m_MethodName: SetGameState
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: a4b226bf1839cbc41b4e9e70318d8c99, type: 2}
+          m_ObjectArgumentAssemblyTypeName: GameStateSO, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -78,6 +93,19 @@ MonoBehaviour:
   playerPrefab: {fileID: 1202928858327742439, guid: 4233ee0826c0837409c233328ffed241, type: 3}
   followCamera: {fileID: 0}
   playerParent: {fileID: 0}
+--- !u!114 &1157447716350740678
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4380032123129628824}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4abb2b3bf8802ad4490fb7de5cedaadd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 11400000, guid: c536dbc32fe59c1448df8634d072a550, type: 2}
 --- !u!1 &6776790226998417410
 GameObject:
   m_ObjectHideFlags: 0
