@@ -9,8 +9,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f14fcd746e0b9a040a304465880fa6ee, type: 3}
-  m_Name: Sensei
+  m_Script: {fileID: 11500000, guid: 355a4b4a1d008784b9fce2dd517351f2, type: 3}
+  m_Name: ConversationRequestGameEvent
   m_EditorClassIdentifier: 
-  fullname: "Pap\xE1"
-  portrait: {fileID: 1404248521807868572, guid: ae2e59adf58c94839a4a49d1a41c5920, type: 3}
+  _debugValue: {fileID: 11400000, guid: 8bb57ec69d399fb4fae93c143cb84868, type: 2}

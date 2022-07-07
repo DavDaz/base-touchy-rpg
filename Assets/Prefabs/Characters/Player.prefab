@@ -196,7 +196,19 @@ MonoBehaviour:
     m_ActionId: 58bb37cc-74c8-4940-8411-061b4b2b8f8f
     m_ActionName: PlayerControls/Movement[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d]
   - m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2628924224917201890}
+        m_TargetAssemblyTypeName: PlayerInteraction, Assembly-CSharp
+        m_MethodName: EnableInteractable
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_ActionId: 653682df-8a86-4e89-90e1-e74d4baf2b9b
     m_ActionName: PlayerControls/Interact[/Keyboard/e]
   m_NeverAutoSwitchControlSchemes: 0
@@ -264,6 +276,7 @@ MonoBehaviour:
   disabledStates:
   - {fileID: 11400000, guid: 5f2017cabd2ef0342b69ad4d9c8192b1, type: 2}
   - {fileID: 11400000, guid: 2692b6607586f2d499d1b1e22e4525d5, type: 2}
+  - {fileID: 11400000, guid: 8f159ed7dc221d647b3db44185ac54b3, type: 2}
   onMainMenuState:
     m_PersistentCalls:
       m_Calls: []
@@ -274,6 +287,9 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   onPauseState:
+    m_PersistentCalls:
+      m_Calls: []
+  onDialogueState:
     m_PersistentCalls:
       m_Calls: []
 --- !u!1 &1202928858679674717
@@ -370,6 +386,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6778685977757137971}
   - component: {fileID: 2094382652243057366}
+  - component: {fileID: 2628924224917201890}
   m_Layer: 7
   m_Name: Interaction
   m_TagString: Player
@@ -418,3 +435,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.1150806, y: 0.6029718}
   m_EdgeRadius: 0
+--- !u!114 &2628924224917201890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3928712403892994381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0eefa1f37f2abe84682574dbe3ed70a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  interactableTag: Interactable
+  interactionRequestEvent: {fileID: 11400000, guid: e31a244eac4e53d449ee08c9aa32ef44, type: 2}
